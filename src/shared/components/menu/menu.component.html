@@ -1,0 +1,19 @@
+<div class="">
+  <p-menubar [model]="items">
+    <ng-template pTemplate="start">
+      <button
+        pButton
+        type="button"
+        class="btn-menu mr-3"
+        icon="pi pi-bars"
+        (click)="showMenu()"
+      ></button>
+      <img src="assets/img/logo.png" height="60" class="mr-2" id="logo" />
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div class="flex align-content-center">
+        <label for="">GNP</label>
+      </div>
+    </ng-template>
+  </p-menubar>
+</div>

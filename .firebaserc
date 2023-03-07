@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "remote-config-532db": {
+      "hosting": {
+        "demo-remote-config": [
+          "remote-config-532db"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "remote-config-532db"
+  }
+}

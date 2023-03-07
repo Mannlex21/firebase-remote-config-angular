@@ -1,1 +1,142 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body,
+app-root,
+app-modules {
+  overflow: hidden;
+  height: 100vh;
+}
+
+:root {
+  --surface-a: #1e1e1e;
+  --surface-b: #121212;
+  --surface-c: hsla(0, 0%, 100%, 0.04);
+  --surface-d: hsla(0, 0%, 100%, 0.12);
+  --surface-e: #1e1e1e;
+  --surface-f: #262626;
+  --text-color: rgba(255, 255, 255, 0.87) !important;
+  --text-color-secondary: #3f3f41 !important;
+  --error-color: #dd5353 !important;
+  --primary-color: #f36a38 !important;
+  --primary-color-text: #121212 !important;
+  --secondary-color: #707072 !important;
+  --secondary-color-text: #ffffff !important;
+  --font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
+    Lucida Grande, sans-serif;
+  --surface-ground: #121212;
+  --surface-section: #121212;
+  --surface-card: #1e1e1e;
+  --surface-overlay: #3f3f41 !important;
+  --surface-border: hsla(0, 0%, 100%, 0.12);
+  --surface-hover: hsla(0, 0%, 100%, 0.04);
+  --maskbg: rgba(0, 0, 0, 0.32);
+  --focus-ring: none;
+  color-scheme: dark;
+}
+
+.text-subtitle-color {
+  color: #aaaaaa;
+}
+.background-color {
+  background-color: var(--surface-ground) !important;
+}
+:root ::ng-deep .p-dropdown-label {
+  color: white;
+}
+
+:host ::ng-deep .w-100 {
+  width: 100%;
+}
+.fs-18 {
+  font-size: 18px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+.w-100 {
+  width: 100%;
+}
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+/* Button back */
+.btn-back {
+  background-color: var(--surface-overlay) !important;
+  border-color: var(--surface-overlay) !important;
+  border-radius: 0 !important;
+}
+.btn-back:hover {
+  background-color: var(--surface-overlay) !important;
+  border-color: var(--surface-overlay) !important;
+  opacity: 0.9 !important;
+}
+
+/* Button qualtop */
+:root .btn-qualtop {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+:root .btn-qualtop:enabled:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  opacity: 0.9;
+}
+
+:root .btn-qualtop:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Button secondary */
+:root .btn-qualtop-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+:root .btn-qualtop-secondary:hover {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+:root .btn-qualtop-secondary:enabled:hover {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  opacity: 0.9;
+}
+
+/* Button danger */
+:root .btn-danger {
+  background-color: var(--error-color);
+  border-color: var(--error-color);
+}
+:root .btn-danger:enabled:hover {
+  background-color: var(--error-color);
+  border-color: var(--error-color);
+  opacity: 0.9;
+}
+
+:root .btn-danger:hover {
+  background-color: var(--error-color);
+  border-color: var(--error-color);
+}
+
+.error-label {
+  padding: 5px;
+  color: var(--error-color) !important;
+}

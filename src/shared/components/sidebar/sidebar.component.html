@@ -1,0 +1,12 @@
+<div [@widthGrow]="state" class="sidebar" style="min-width: 170px">
+  <ul class="menubar">
+    <li *ngFor="let item of items" class="menu-item">
+      <a
+        class="menuitem-link"
+        [className]="item.styleClass"
+        (click)="item.command($event)"
+        ><span>item.label</span></a
+      >
+    </li>
+  </ul>
+</div>

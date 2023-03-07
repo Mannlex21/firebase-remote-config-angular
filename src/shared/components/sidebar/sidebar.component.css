@@ -1,0 +1,103 @@
+:host {
+  flex: 1 0 10%;
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+}
+
+:host ::ng-deep .p-sidebar-content {
+  padding: 10px;
+}
+
+:host
+  ::ng-deep
+  .p-megamenu
+  .p-megamenu-root-list
+  > .p-menuitem
+  > .p-menuitem-link {
+  border-radius: 0;
+}
+:host ::ng-deep .p-megamenu {
+  background-color: var(--surface-overlay);
+  color: var(--text-color);
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  padding-top: 15px;
+  width: 100%;
+}
+
+:host ::ng-deep .p-menuitem-text,
+:host ::ng-deep .p-submenu-icon,
+:host ::ng-deep .p-menuitem-icon {
+  color: var(--text-color) !important;
+}
+
+:host
+  ::ng-deep
+  .p-megamenu
+  .p-megamenu-root-list
+  > .p-menuitem
+  > .p-menuitem-link:not(.p-disabled):hover,
+:host ::ng-deep .active {
+  background-color: var(--primary-color);
+}
+
+:host ::ng-deep .p-menuitem-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 230px;
+  height: 1.2em;
+  white-space: nowrap;
+}
+
+.menubar {
+  margin: 0;
+  padding: 10px 0px;
+  list-style: none;
+}
+.sidebar {
+  background-color: var(--surface-overlay);
+  color: var(--text-color);
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  padding-top: 15px;
+  width: 100%;
+  padding: 0.25rem 0;
+}
+.menu-item {
+  margin: 0;
+  position: relative;
+}
+
+.menu-item > a {
+  padding: 0.75rem 1.25rem;
+  color: #495057;
+  border-radius: 6px;
+  transition: box-shadow 0.2s;
+  -webkit-user-select: none;
+  user-select: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+}
+.menu-item > a > span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 230px;
+  height: 1.2em;
+  white-space: nowrap;
+  line-height: 1;
+  color: var(--text-color) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: normal;
+}

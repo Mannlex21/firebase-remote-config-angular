@@ -1,0 +1,33 @@
+:host ::ng-deep .p-menubar {
+  background-color: var(--surface-overlay) !important;
+  color: var(--text-color);
+  border: none;
+  border-radius: 0;
+}
+
+.btn-menu {
+  background-color: var(--surface-overlay) !important;
+  border-color: var(--surface-overlay) !important;
+  border-radius: 0 !important;
+}
+.btn-menu:hover {
+  background-color: var(--surface-overlay) !important;
+  border-color: var(--surface-overlay) !important;
+  opacity: 0.9 !important;
+}
+
+:host ::ng-deep .btn-menu .pi {
+  font-size: 21px;
+}
+
+@media (min-width: 270px) and (max-width: 375px) {
+  #logo {
+    width: 50%;
+    height: auto;
+  }
+}
+@media (max-width: 269px) {
+  #logo {
+    display: none;
+  }
+}

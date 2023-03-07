@@ -25,7 +25,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeflex/primeflex.css"
             ],
             "scripts": []
           },
@@ -91,8 +95,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "demo-remote-config:build:production",
+            "firebaseProject": "remote-config-532db",
+            "firebaseHostingSite": "remote-config-532db"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "896cc4a8-b815-4346-8d9a-5af58f684abf"
   }
 }
