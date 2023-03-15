@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --text-color: #ffffff;
   --primary-color-text: #151515;
   --surface-overlay: #2a323d;
@@ -8,4 +8,16 @@
   --secondary-color: #5a6268;
   --error-color: #e97984;
   --surface-card: #2a323d;
+} */
+
+:root {
+  --text-color: #ffffff;
+  --primary-color-text: #121212;
+  --surface-overlay: #262626;
+  --surface-ground: #121212;
+  --surface-900: #ffffff;
+  --primary-color: #9fa8da;
+  --secondary-color: #f48fb1;
+  --error-color: #ef9a9a;
+  --surface-card: #1e1e1e;
 }
