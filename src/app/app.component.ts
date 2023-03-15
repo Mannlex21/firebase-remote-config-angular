@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { fetchAndActivate, getValue } from 'firebase/remote-config';
 import { RemoteConfig } from '@angular/fire/remote-config';
+import { ScriptService } from 'src/core/services/links.service';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,12 @@ export class AppComponent implements AfterViewInit, OnInit {
       '--surface-card': { value: '#1e1e1e' },
     },
   };
-  constructor(private remoteConfig: RemoteConfig) {}
+  constructor(
+    private remoteConfig: RemoteConfig,
+    private scriptService: ScriptService
+  ) {
+    this.scriptService.load('themeCSS-googleapis');
+  }
   ngOnInit(): void {
     // this.loading = true;
     // this.remoteConfig.settings.minimumFetchIntervalMillis = 1000; // configuración opcional
@@ -42,7 +48,14 @@ export class AppComponent implements AfterViewInit, OnInit {
     //   document.head.appendChild(style);
     //   this.loading = false;
     // });
+    // this.LinkStore.forEach((link: any) => {
+    //   this.links[link.name] = {
+    //     loaded: false,
+    //     href: link.href,
+    //   };
+    // });
   }
+
   toggleMenu($event: Boolean) {
     this.showMenu = !this.showMenu;
   }
