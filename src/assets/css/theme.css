@@ -10,7 +10,7 @@
   --surface-card: #2a323d;
 } */
 
-/* :root {
+:root {
   --text-color: #ffffff;
   --primary-color-text: #121212;
   --surface-overlay: #262626;
@@ -20,7 +20,7 @@
   --secondary-color: #f48fb1;
   --error-color: #ef9a9a;
   --surface-card: #1e1e1e;
-} */
+}
 
 /* :root {
   --text-color: #000000;
@@ -34,7 +34,7 @@
   --surface-card: #ffffff;
 } */
 
-:root {
+/* :root {
   --text-color: #4b4b4b;
   --primary-color-text: #ffffff;
   --surface-overlay: #ffffff;
@@ -44,4 +44,4 @@
   --secondary-color: #ef7a3d;
   --error-color: #e97984;
   --surface-card: #f6f9fd;
-}
+} */
