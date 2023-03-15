@@ -52,8 +52,8 @@ export class SidebarComponent implements OnInit, OnChanges, AfterViewInit {
   ngOnInit(): void {
     this.items = [
       {
-        label: 'sidebar.ticket-register',
-        styleClass: this.activeCurrentPage('/ticket-register'),
+        label: 'Menu 1',
+        styleClass: 'menuitem-link',
         command: (event: any) => {
           this.activeItem(event);
           // this.router.navigate(['/ticket-register']);
@@ -61,22 +61,22 @@ export class SidebarComponent implements OnInit, OnChanges, AfterViewInit {
       },
 
       {
-        label: 'sidebar.candidate-register',
-        styleClass: this.activeCurrentPage('/candidate-register'),
+        label: 'Menu 2',
+        styleClass: 'menuitem-link',
         command: (event: any) => {
           this.activeItem(event);
         },
       },
       {
-        label: 'sidebar.management-ticket',
-        styleClass: this.activeCurrentPage('/candidates-management'),
+        label: 'Menu 3',
+        styleClass: 'menuitem-link',
         command: (event: any) => {
           this.activeItem(event);
         },
       },
       {
-        label: 'sidebar.candidates-portfolio',
-        styleClass: this.activeCurrentPage('/candidates-portfolio'),
+        label: 'Menu 4',
+        styleClass: 'menuitem-link',
         command: (event: any) => {
           this.activeItem(event);
         },
@@ -88,6 +88,7 @@ export class SidebarComponent implements OnInit, OnChanges, AfterViewInit {
       this.setWidthBasedOnScreen();
     }, 0);
   }
+
   setWidthBasedOnScreen() {
     if (window.innerWidth < 1000) {
       this.state = 'closed';

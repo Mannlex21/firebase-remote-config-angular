@@ -19,21 +19,6 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.items = [];
-    this.remoteConfig.settings.minimumFetchIntervalMillis = 1000; // configuración opcional
-    fetchAndActivate(this.remoteConfig).then((data) => {
-      // realizar acciones después de recuperar y activar la configuración remota
-      const v = getValue(this.remoteConfig, 'theme').asString();
-      const json = JSON.parse(v);
-      var style = document.createElement('style');
-      let string = '';
-      for (const key in json['theme']) {
-        string += `${key}: ${json['theme'][key].value};`;
-      }
-
-      style.textContent = `body { ${string} }`;
-      console.log(style.textContent);
-      document.head.appendChild(style);
-    });
   }
 
   showMenu() {

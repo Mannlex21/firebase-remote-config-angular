@@ -8,9 +8,91 @@
       <app-sidebar [(showMenu)]="showMenu"></app-sidebar>
     </div>
     <div class="container-body">
-      <div class="wrapper-inner mb-2">
-        <router-outlet></router-outlet>
+      <div class="wrapper-inner mb-2" style="padding: 10px">
+        <div style="margin-bottom: 10px">
+          <h1>Titulo de ejemplo</h1>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+            elit non ipsum fermentum pharetra. Integer finibus ac urna quis
+            mollis. Sed erat ex, bibendum a tortor sit amet, auctor scelerisque
+            risus. Proin a quam ante. Quisque rutrum nisi quis ante faucibus
+            pulvinar. Ut mollis ante ut elementum mollis. Quisque et auctor
+            diam. Maecenas vel porttitor dui, ac malesuada dolor. Cras turpis
+            arcu, tincidunt vel commodo et, luctus eu massa. Aliquam tincidunt
+            cursus arcu sed semper. Ut tristique eget est eget viverra. Donec
+            eleifend massa et ex egestas cursus. Ut non est non neque tristique
+            hendrerit. Curabitur elementum auctor vulputate. Phasellus elementum
+            mi nec metus vulputate, nec pharetra magna feugiat. Suspendisse ut
+            lacus vitae leo rhoncus pretium id sed lacus. Etiam hendrerit elit
+            at auctor posuere. Donec massa elit, pulvinar eu feugiat et, rhoncus
+            eu tortor. Duis vehicula est sit amet libero dictum, vitae volutpat
+            felis sollicitudin. Etiam faucibus semper nunc, eget varius massa
+            auctor quis. Phasellus fermentum pulvinar consectetur. Fusce tempor
+            congue leo, et commodo sem elementum vehicula. Vestibulum non dui
+            mattis justo semper placerat scelerisque volutpat quam. Sed volutpat
+            eros velit, vitae molestie nisi placerat a. In elementum tellus
+            lacus, sed dapibus nulla pellentesque id. Nullam at orci nec sem
+            imperdiet tempor. Vivamus efficitur leo urna, a semper sapien porta
+            in. Duis venenatis, mauris et placerat interdum, nunc massa aliquam
+            nunc, a congue nunc risus ac sem. Sed eget velit vitae lorem
+            molestie feugiat sit amet nec dolor. Vivamus in massa eget tellus
+            interdum volutpat. Integer a congue quam. Sed sollicitudin vel enim
+            a mollis. Duis ullamcorper tincidunt arcu non viverra. Praesent
+            interdum, est sit amet efficitur pretium, turpis urna eleifend leo,
+            nec dignissim ex velit ac ante. Donec dapibus, odio et sollicitudin
+            tempor, orci nisl viverra diam, in pretium lacus dolor sed nunc.
+            Integer a hendrerit lacus. Pellentesque efficitur viverra dignissim.
+            Integer pellentesque dui in lacinia convallis. Aenean sed pretium
+            risus. Curabitur efficitur tristique semper. Nam facilisis aliquet
+            orci, vel volutpat neque commodo vel. Phasellus pellentesque turpis
+            vitae sagittis sagittis. Aenean lectus diam, ultrices nec eros at,
+            rhoncus interdum eros. Duis nec libero tempus, sagittis mauris
+            lacinia, fermentum dui. Praesent vel leo fringilla, ullamcorper ex
+            nec, condimentum ante. Donec faucibus consectetur aliquam. Fusce
+            ultricies leo ut congue ultricies. Proin eu magna et urna
+            sollicitudin vehicula non quis ipsum. Nulla accumsan ultrices leo id
+            porttitor. Pellentesque diam quam, mollis vel pellentesque vel,
+            imperdiet et ipsum. Suspendisse vitae ex ante. Maecenas ac ultricies
+            nunc. Maecenas id quam efficitur, egestas tortor eget, finibus
+            massa. Quisque tempus libero massa. Sed at arcu ut odio congue
+            mollis. Donec vitae magna a felis congue semper ac quis lorem.
+          </div>
+        </div>
+        <pre class="card">
+          <code>{{ theme | json }}</code>
+          
+        </pre>
+
+        <div>
+          <button
+            class="btn-primary"
+            pButton
+            type=""
+            style="margin-right: 10px"
+          >
+            Primary
+          </button>
+          <button
+            class="btn-secondary"
+            pButton
+            type=""
+            style="margin-right: 10px"
+          >
+            Secondary
+          </button>
+          <button class="btn-error" pButton type="">Danger</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
+<ngx-loading
+  [show]="loading"
+  [config]="{
+    backdropBorderRadius: '3px',
+    backdropBackgroundColour: 'rgba(255,255,255,1)',
+    primaryColour: '#041014',
+    secondaryColour: '#041014',
+    tertiaryColour: '#041014'
+  }"
+></ngx-loading>

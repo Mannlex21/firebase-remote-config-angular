@@ -13,19 +13,27 @@ import {
 } from '@angular/fire/remote-config';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
+import { NgxLoadingModule } from 'ngx-loading';
 
 @NgModule({
   imports: [
     CommonModule,
     MenubarModule,
     ButtonModule,
+    NgxLoadingModule.forRoot({}),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideRemoteConfig(() => getRemoteConfig()),
     // AngularFireModule.initializeApp(environment.firebase),
     // AngularFireRemoteConfigModule,
   ],
   declarations: [MenuComponent, SidebarComponent],
-  exports: [MenuComponent, SidebarComponent, MenubarModule, ButtonModule],
+  exports: [
+    MenuComponent,
+    SidebarComponent,
+    MenubarModule,
+    ButtonModule,
+    NgxLoadingModule,
+  ],
   providers: [],
 })
 export class SharedModule {

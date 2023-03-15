@@ -31,3 +31,9 @@
     display: none;
   }
 }
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
