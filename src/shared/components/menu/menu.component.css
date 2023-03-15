@@ -19,6 +19,9 @@
 :host ::ng-deep .btn-menu .pi {
   font-size: 21px;
 }
+:host ::ng-deep .p-button {
+  color: var(--text-color);
+}
 
 @media (min-width: 270px) and (max-width: 375px) {
   #logo {
