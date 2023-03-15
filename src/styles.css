@@ -36,7 +36,7 @@ h1 {
   color: var(--surface-900);
 }
 
-:root {
+/* :root {
   --surface-a: #1e1e1e;
   --surface-b: #121212;
   --surface-c: hsla(0, 0%, 100%, 0.04);
@@ -62,7 +62,7 @@ h1 {
   --maskbg: rgba(0, 0, 0, 0.32);
   --focus-ring: none;
   color-scheme: dark;
-}
+} */
 
 .text-subtitle-color {
   color: #aaaaaa;
